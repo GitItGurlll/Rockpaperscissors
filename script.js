@@ -2,7 +2,7 @@ console.log("h")
 let compChoice = ""
 function getComputerChoice(compChoice) {
     console.log("h")
-    let randomNumber = (Math.random() * (3 - 1));
+    let randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber == 1) {
         console.log("h")
     compChoice = "Scissors"
