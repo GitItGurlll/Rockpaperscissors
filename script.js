@@ -18,8 +18,9 @@ return compChoice;
 }
 
 function oneround() {
-    let  playerChoice = prompt("Rock, Paper, or Scissors?").toLowerCase();
-    if ((playerChoice == "rock") && (compChoice == "scissors")) {
+    if (playerChoice === compChoice) {
+        console.log("tie!")
+    } else if (playerChoice === "rock" && compChoice === "scissors") {
         console.log("You win!")
     } else {
         console.log("you lost")
@@ -28,4 +29,5 @@ function oneround() {
 }
  
 console.log(getComputerChoice(compChoice))
+let  playerChoice = prompt("Rock, Paper, or Scissors?").toLowerCase();
 console.log(oneround())
